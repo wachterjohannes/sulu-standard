@@ -1,4 +1,4 @@
 website_search:
-    path: /search
+    path: /search__
     defaults:
         _controller: "ClientWebsiteBundle:Search:query"

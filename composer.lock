@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "136e81523ffcd56f27ca95d54f9d76fc",
-    "content-hash": "97d78ce2cb9f44437b1b482fc6fa75eb",
+    "hash": "148b128e2ddd66fbeef775f219ff5687",
+    "content-hash": "0a19730979fdd6854563b35923d5099c",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -3863,17 +3863,53 @@
             "time": "2016-04-11 16:04:37"
         },
         {
+            "name": "sulu/route-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu/SuluRouteBundle.git",
+                "reference": "628a367fb79ef59d156b17bf03f5d682b1b810be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu/SuluRouteBundle/zipball/628a367fb79ef59d156b17bf03f5d682b1b810be",
+                "reference": "628a367fb79ef59d156b17bf03f5d682b1b810be",
+                "shasum": ""
+            },
+            "require": {
+                "sulu/sulu": "dev-develop",
+                "symfony-cmf/slugifier-api": "^1.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.4.*",
+                "jackalope/jackalope-jackrabbit": "~1.2.0",
+                "phpunit/phpunit": "^4.8",
+                "symfony/monolog-bundle": "2.4.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Sulu\\Bundle\\RouteBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-04-13 13:16:33"
+        },
+        {
             "name": "sulu/sulu",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu/sulu.git",
-                "reference": "9a5c5aed2b857436a3cc5ae1e4655d71985faaa5"
+                "reference": "d457ac98841d3e9955b9d1ce3df90b63e6b514be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu/sulu/zipball/9a5c5aed2b857436a3cc5ae1e4655d71985faaa5",
-                "reference": "9a5c5aed2b857436a3cc5ae1e4655d71985faaa5",
+                "url": "https://api.github.com/repos/sulu/sulu/zipball/d457ac98841d3e9955b9d1ce3df90b63e6b514be",
+                "reference": "d457ac98841d3e9955b9d1ce3df90b63e6b514be",
                 "shasum": ""
             },
             "require": {
@@ -3966,7 +4002,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2016-04-12 14:48:57"
+            "time": "2016-04-13 14:59:15"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4206,6 +4242,53 @@
             "time": "2014-05-08 19:39:23"
         },
         {
+            "name": "symfony-cmf/slugifier-api",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/slugifier-api.git",
+                "reference": "32537551dbb6ed831b7523d7e63367d3fcea1c37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/slugifier-api/zipball/32537551dbb6ed831b7523d7e63367d3fcea1c37",
+                "reference": "32537551dbb6ed831b7523d7e63367d3fcea1c37",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.9|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Cmf\\Api\\Slugifier\\": "",
+                    "Symfony\\Cmf\\Bundle\\CoreBundle\\Slugifier\\": "CoreBundle"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/slugifier-api/contributors"
+                }
+            ],
+            "description": "Provides a basic slugifier interface to transform text into strings suitable for URLs",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "slugify",
+                "urlize"
+            ],
+            "time": "2016-03-31 08:06:29"
+        },
+        {
             "name": "symfony/assetic-bundle",
             "version": "v2.8.0",
             "source": {
@@ -4277,20 +4360,20 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "2.11.0",
+            "version": "2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bundle.git",
-                "reference": "d156f625dc3ce04f44e6d0ce36ae19cc35f51a97"
+                "reference": "e7caf4936c7be82bc6d68df87f1d23a0d5bf6e00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/d156f625dc3ce04f44e6d0ce36ae19cc35f51a97",
-                "reference": "d156f625dc3ce04f44e6d0ce36ae19cc35f51a97",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/e7caf4936c7be82bc6d68df87f1d23a0d5bf6e00",
+                "reference": "e7caf4936c7be82bc6d68df87f1d23a0d5bf6e00",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "~1.12",
+                "monolog/monolog": "~1.18",
                 "php": ">=5.3.2",
                 "symfony/config": "~2.3|~3.0",
                 "symfony/dependency-injection": "~2.3|~3.0",
@@ -4333,7 +4416,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2016-04-12 18:48:21"
+            "time": "2016-04-13 16:21:01"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -6279,6 +6362,7 @@
     "stability-flags": {
         "sulu/sulu": 20,
         "zendframework/zendsearch": 20,
+        "sulu/route-bundle": 20,
         "phpcr/phpcr-shell": 10,
         "behat/mink-extension": 20,
         "behat/mink-selenium2-driver": 20,

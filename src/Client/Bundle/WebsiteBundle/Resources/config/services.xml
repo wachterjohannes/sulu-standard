@@ -4,14 +4,9 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!-- Define here your own services:
-    <parameters>
-        <parameter key="client_website.client_twig_extension.class">Client\Bundle\WebsiteBundle\Twig\ClientTwigExtension</parameter>
-    </parameters>
-
     <services>
-        <service id="client_website.client_twig_extension" class="%client_website.client_twig_extension.class%">
-            <tag name="twig.extension" />
+        <service id="client_website.example_defaults_provider" class="Client\Bundle\WebsiteBundle\ExampleRouteDefaultsProvider">
+            <tag name="sulu_route.defaults_provider" />
         </service>
-    </services> -->
+    </services>
 </container>
