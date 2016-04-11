@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "148b128e2ddd66fbeef775f219ff5687",
-    "content-hash": "0a19730979fdd6854563b35923d5099c",
+    "hash": "0a367499f359e36c5c49ffec5d29fc17",
+    "content-hash": "25b7eb455f09e28dea82b68d3dc41ecf",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -2512,6 +2512,50 @@
             "time": "2015-06-07 18:06:44"
         },
         {
+            "name": "massive/blog-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.massiveart.com:bundle/MassiveBlogBundle.git",
+                "reference": "6b1c258da510c38b1620c42c028e9ac9ca78bbe4"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "~1.4",
+                "php": ">=5.4",
+                "sensio/framework-extra-bundle": "3.0.*",
+                "sulu/sulu": "dev-develop"
+            },
+            "require-dev": {
+                "evenement/evenement": "2.0.0 as 1.0.0",
+                "matthiasnoback/symfony-dependency-injection-test": "~0.7.1",
+                "phpunit/phpunit": "^5.0",
+                "pulse00/ffmpeg-bundle": "@dev",
+                "symfony-cmf/testing": "~1.1",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Massive\\Bundle\\BlogBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Matt",
+                    "email": "dominik.matt@massiveart.com"
+                }
+            ],
+            "description": "Symfony bundle that adds an blog to SULU",
+            "keywords": [
+                "blog"
+            ],
+            "time": "2016-04-08 12:30:09"
+        },
+        {
             "name": "massive/build-bundle",
             "version": "0.2",
             "source": {
@@ -3864,20 +3908,20 @@
         },
         {
             "name": "sulu/route-bundle",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu/SuluRouteBundle.git",
-                "reference": "628a367fb79ef59d156b17bf03f5d682b1b810be"
+                "reference": "bc921a57ab51ceccfa90d3489136e34b47e20c6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu/SuluRouteBundle/zipball/628a367fb79ef59d156b17bf03f5d682b1b810be",
-                "reference": "628a367fb79ef59d156b17bf03f5d682b1b810be",
+                "url": "https://api.github.com/repos/sulu/SuluRouteBundle/zipball/bc921a57ab51ceccfa90d3489136e34b47e20c6c",
+                "reference": "bc921a57ab51ceccfa90d3489136e34b47e20c6c",
                 "shasum": ""
             },
             "require": {
-                "sulu/sulu": "dev-develop",
+                "sulu/sulu": "1.2.*|dev-develop",
                 "symfony-cmf/slugifier-api": "^1.0"
             },
             "require-dev": {
@@ -3896,7 +3940,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-04-13 13:16:33"
+            "time": "2016-04-14 08:46:22"
         },
         {
             "name": "sulu/sulu",
@@ -6363,6 +6407,7 @@
         "sulu/sulu": 20,
         "zendframework/zendsearch": 20,
         "sulu/route-bundle": 20,
+        "massive/blog-bundle": 20,
         "phpcr/phpcr-shell": 10,
         "behat/mink-extension": 20,
         "behat/mink-selenium2-driver": 20,

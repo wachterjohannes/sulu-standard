@@ -35,8 +35,15 @@
         "doctrine/doctrine-cache-bundle": "~1.0",
         "oro/doctrine-extensions": "^1.0",
 
-        "sulu/route-bundle": "dev-develop"
+        "sulu/route-bundle": "dev-master",
+        "massive/blog-bundle": "dev-develop"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@gitlab.massiveart.com:bundle/MassiveBlogBundle.git"
+        }
+    ],
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
         "symfony/phpunit-bridge": "~2.7",

@@ -91,6 +91,10 @@ sulu_custom_urls_api:
     resource: "@SuluCustomUrlBundle/Resources/config/routing_api.yml"
     prefix: /admin/api
 
+sulu_preview:
+    resource: "@SuluPreviewBundle/Resources/config/routing.xml"
+    prefix: /admin/preview
+
 # for preview
 client_website:
     type: portal
@@ -99,3 +103,12 @@ client_website:
 sulu_search:
     resource: "@SuluSearchBundle/Resources/config/routing.yml"
     prefix: /admin/search
+
+massive_blog:
+    prefix: /admin/blog
+    resource: "@MassiveBlogBundle/Resources/config/routing.yml"
+
+massive_blog_api:
+    type: rest
+    prefix: /admin/api
+    resource: "@MassiveBlogBundle/Resources/config/routing_api.yml"

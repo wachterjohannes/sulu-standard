@@ -9,6 +9,7 @@ doctrine:
     orm:
         dql:
             string_functions:
+                GROUP_CONCAT: Oro\ORM\Query\AST\Functions\String\GroupConcat
                 CAST: Sulu\Component\Rest\DQL\Cast
 
 doctrine_cache:

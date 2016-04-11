@@ -1,0 +1,30 @@
+{% extends "ClientWebsiteBundle:views:master.html.twig" %}
+
+{% block meta %}{% include "ClientWebsiteBundle:blocks:meta.html.twig" %}{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div class="row" vocab="http://schema.org/" typeof="Content">
+            <div class="col-lg-12">
+                <h1 class="page-header" property="title">{{ content.title }} <span property="releaseDate">{{ content.releaseDate|date('d.m.y') }}</span></h1>
+            </div>
+
+            <ul>
+                <li>Coverstory: <span property="coverStory">{{ content.coverStory }}</span></li>
+                <li>Favorite: <span property="favourite">{{ content.favourite }}</span></li>
+            </ul>
+
+            <ul property="authors">
+                {% for author in content.authors %}
+                    <li>{{ author.fullName }}</li>
+                {% endfor %}
+            </ul>
+
+            <div property="content">
+                <h2 property="title">{{ content.content.title|default('') }}</h2>
+            </div>
+
+            {{ dump(content) }}
+        </div>
+    </div>
+{% endblock %}
