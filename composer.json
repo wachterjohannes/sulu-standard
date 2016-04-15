@@ -33,7 +33,9 @@
         "jackalope/jackalope-doctrine-dbal": "~1.2.5",
         "jackalope/jackalope-jackrabbit": "~1.2.0",
         "doctrine/doctrine-cache-bundle": "~1.0",
-        "oro/doctrine-extensions": "^1.0"
+        "oro/doctrine-extensions": "^1.0",
+
+        "alacrity/alacrity": "1.0.0-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
@@ -44,6 +46,12 @@
         "behat/mink-selenium2-driver": "~1.2@dev",
         "behat/symfony2-extension": "~2.0@dev"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.asapo.at/packages.json"
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",

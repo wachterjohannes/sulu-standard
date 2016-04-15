@@ -1,0 +1,46 @@
+{
+    "name": "sulu-standard",
+    "backup": {
+        "uploads": {
+            "plugin": "directory",
+            "parameter": {
+                "path": "uploads"
+            }
+        },
+        "su_standard": {
+            "plugin": "mysql",
+            "parameter": {
+                "username": "root",
+                "database": "su_standard"
+            }
+        },
+        "cmf": {
+            "plugin": "jackalope-doctrine-dbal",
+            "parameter": {
+                "db_user": "root",
+                "db_password": "",
+                "db_database": "su_standard",
+                "phpcr_path":"/cmf"
+            }
+        },
+        "versions": {
+            "plugin": "jackalope-doctrine-dbal",
+            "parameter": {
+                "db_user": "root",
+                "db_password": "",
+                "db_database": "su_standard",
+                "phpcr_path":"/jcr:versions"
+            }
+        }
+    },
+    "temp": "app/temp",
+    "local": "app/backup",
+    "storage": {
+        "remote": {
+            "type": "local",
+            "parameters": {
+                "path": "app/remote"
+            }
+        }
+    }
+}

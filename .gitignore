@@ -1,3 +1,6 @@
+app/backup
+app/temp
+
 /app/bootstrap.php.cache
 /app/cache/*
 /app/data/*
