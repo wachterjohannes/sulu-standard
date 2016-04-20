@@ -1,0 +1,11 @@
+{% extends "ClientWebsiteBundle:views:master.html.twig" %}
+
+{% block content %}
+    {% for property in metadata.properties %}
+        {{ block('property_'~property.name)|default(block("content_type_"~property.type))|raw }}
+    {% endfor %}
+{% endblock %}
+
+{% use "ClientWebsiteBundle:Scaffolding:text_line.html.twig" %}
+{% use "ClientWebsiteBundle:Scaffolding:text_editor.html.twig" %}
+{% use "ClientWebsiteBundle:Scaffolding:smart_content.html.twig" %}
