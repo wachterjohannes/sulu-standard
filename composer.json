@@ -29,6 +29,7 @@
         "zendframework/zendsearch": "@dev",
 
         "massive/build-bundle": "0.2.*",
+        "massive/blog-bundle": "dev-develop",
 
         "jackalope/jackalope-doctrine-dbal": "~1.2.5",
         "jackalope/jackalope-jackrabbit": "~1.2.0",
@@ -44,6 +45,12 @@
         "behat/mink-selenium2-driver": "~1.2@dev",
         "behat/symfony2-extension": "~2.0@dev"
     },
+    "repositories": [
+        {
+            "url": "git@gitlab.massiveart.com:bundle/MassiveBlogBundle.git",
+            "type": "vcs"
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",

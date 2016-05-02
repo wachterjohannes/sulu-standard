@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "136e81523ffcd56f27ca95d54f9d76fc",
-    "content-hash": "97d78ce2cb9f44437b1b482fc6fa75eb",
+    "hash": "c22c4884322221ae7c892f4e145c98b5",
+    "content-hash": "1e4f2a5ac9dba2f57a57d387bed97d71",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -2506,6 +2506,50 @@
                 "theming"
             ],
             "time": "2015-06-07 18:06:44"
+        },
+        {
+            "name": "massive/blog-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.massiveart.com:bundle/MassiveBlogBundle.git",
+                "reference": "4f3d33b11925287c1d6bb572dc62354fceb65c6a"
+            },
+            "require": {
+                "friendsofsymfony/rest-bundle": "~1.4",
+                "php": ">=5.4",
+                "sensio/framework-extra-bundle": "3.0.*",
+                "sulu/sulu": "~1.2 || dev-develop"
+            },
+            "require-dev": {
+                "evenement/evenement": "2.0.0 as 1.0.0",
+                "matthiasnoback/symfony-dependency-injection-test": "~0.7.1",
+                "phpunit/phpunit": "^5.0",
+                "pulse00/ffmpeg-bundle": "@dev",
+                "symfony-cmf/testing": "~1.1",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Massive\\Bundle\\BlogBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominik Matt",
+                    "email": "dominik.matt@massiveart.com"
+                }
+            ],
+            "description": "Symfony bundle that adds an blog to SULU",
+            "keywords": [
+                "blog"
+            ],
+            "time": "2016-04-26 16:22:25"
         },
         {
             "name": "massive/build-bundle",
@@ -6275,6 +6319,7 @@
     "stability-flags": {
         "sulu/sulu": 20,
         "zendframework/zendsearch": 20,
+        "massive/blog-bundle": 20,
         "phpcr/phpcr-shell": 10,
         "behat/mink-extension": 20,
         "behat/mink-selenium2-driver": 20,

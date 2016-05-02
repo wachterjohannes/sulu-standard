@@ -91,6 +91,15 @@ sulu_custom_urls_api:
     resource: "@SuluCustomUrlBundle/Resources/config/routing_api.yml"
     prefix: /admin/api
 
+massive_blog:
+    resource: "@MassiveBlogBundle/Resources/config/routing.yml"
+    prefix: /admin/blog
+
+massive_blog_api:
+    type: rest
+    resource: "@MassiveBlogBundle/Resources/config/routing_api.yml"
+    prefix: /admin/api
+
 # for preview
 client_website:
     type: portal
