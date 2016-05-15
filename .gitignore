@@ -47,3 +47,8 @@
 
 # Behat local file
 behat.yml
+
+# nanbando
+.nanbando
+.puli
+puli.json

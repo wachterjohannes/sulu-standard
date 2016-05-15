@@ -1,0 +1,40 @@
+{
+    "name": "sulu/test",
+    "imports": [
+        "app/config/parameters.yml"
+    ],
+    "backup": {
+        "uploads": {
+            "plugin": "directory",
+            "parameter": {
+                "directory": "uploads"
+            }
+        },
+        "database": {
+            "plugin": "mysql",
+            "parameter": {
+                "username": "%database_user%",
+                "password": "%database_password%",
+                "database": "%database_name%"
+            }
+        },
+        "cmf": {
+            "plugin": "jackrabbit",
+            "parameter": {
+                "jackrabbit_uri": "http://localhost:8080/server/",
+                "path": "/cmf"
+            }
+        },
+        "versions": {
+            "plugin": "jackrabbit",
+            "parameter": {
+                "jackrabbit_uri": "http://localhost:8080/server/",
+                "path": "/jcr:versions"
+            }
+        }
+    },
+    "require": {
+        "nanbando/mysql": "dev-master",
+        "nanbando/jackrabbit": "dev-master"
+    }
+}
